@@ -72,7 +72,7 @@ body { margin: 0; background: var(--cream); color: var(--ink); font: 400 1.0625r
 .content td:first-child { font-weight: 600; white-space: nowrap; }
 
 /* FAQ : questions en gras suivies de leur réponse */
-.content p > strong:only-child { display: block; margin-top: 1.25rem; font-family: var(--heading); font-size: 1.15rem; }
+.content h2[id="10-faq"] ~ p > strong:first-child { display: block; margin-top: 1.25rem; font-family: var(--heading); font-size: 1.15rem; }
 
 .site-footer { background: var(--enamel); color: var(--on-enamel-muted); padding: 2.5rem 0; font-size: 0.95rem; }
 .site-footer p { margin: 0; }
