@@ -1,12 +1,12 @@
 ---
 title: Cutaway documentation
+layout: default
 ---
 
 # Cutaway documentation
 
-Cutaway is a Shopify theme for brands that sell machines and the spare parts for them. Its main feature is the **exploded view**: a drawing of a machine with numbered callouts, where each number links to the part, its reference, its stock and its price.
-
-This guide is written for the merchant. It covers setup in the order you will need it.
+* TOC
+{:toc}
 
 ## 1. Before you start
 

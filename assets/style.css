@@ -1,0 +1,78 @@
+/* Couleurs et polices du style « Cutaway » du thème : émail vert, laiton, papier crème. */
+:root {
+  --cream: #F2EFE4;
+  --enamel: #173A31;
+  --enamel-2: #1F4A3E;
+  --brass: #C9962E;
+  --ink: #15211D;
+  --muted: #46544E;
+  --accent: #8A6518;
+  --line: #6F6B58;
+  --on-enamel: #F2EFE4;
+  --on-enamel-muted: #C7D3CB;
+  --radius: 4px;
+  --heading: "Zilla Slab", Georgia, serif;
+  --body: "Libre Franklin", -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 400 1.0625rem/1.65 var(--body); }
+.wrap { width: min(100% - 2rem, 72rem); margin-inline: auto; }
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; z-index: 10; background: var(--brass); color: var(--ink); padding: 0.5rem 1rem; }
+:focus-visible { outline: 3px solid var(--brass); outline-offset: 2px; }
+
+.top-bar { background: var(--brass); color: var(--ink); text-align: center; font-size: 0.875rem; padding: 0.4rem 1rem; }
+.site-header { background: var(--enamel); color: var(--on-enamel); border-bottom: 1px solid rgba(242, 239, 228, 0.18); }
+.site-header__inner { display: flex; align-items: center; justify-content: space-between; min-height: 4rem; gap: 1rem; }
+.wordmark { font: 700 1.6rem/1 var(--heading); color: var(--on-enamel); text-decoration: none; letter-spacing: 0.01em; }
+.wordmark--small { font-size: 1.3rem; margin: 0 0 0.5rem; }
+.site-header nav { display: flex; gap: 1.5rem; }
+.site-header nav a { color: var(--on-enamel); text-decoration: none; display: inline-flex; align-items: center; min-height: 2.75rem; }
+.site-header nav a:hover { text-decoration: underline; text-underline-offset: 0.3em; }
+
+.hero { background: var(--enamel); color: var(--on-enamel); padding: clamp(2rem, 6vw, 4rem) 0; }
+.hero__inner { display: grid; gap: 2rem; align-items: center; }
+@media (min-width: 900px) { .hero__inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); } }
+.eyebrow { margin: 0 0 0.75rem; font-size: 0.8125rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--on-enamel-muted); }
+.hero h1 { margin: 0 0 1rem; font: 700 clamp(2.1rem, 4.5vw, 3.2rem)/1.08 var(--heading); text-wrap: balance; }
+.lead { margin: 0; max-width: 36rem; color: var(--on-enamel); font-size: 1.125rem; }
+.hero__drawing { width: 100%; height: auto; background: var(--enamel-2); border-radius: var(--radius); padding: 1rem; }
+.hero__drawing .axis { stroke: var(--on-enamel-muted); stroke-width: 1.5; stroke-dasharray: 10 6; }
+.hero__drawing .part { fill: #2A5A4C; stroke: var(--on-enamel); stroke-width: 2; }
+.hero__drawing .cut { fill: var(--enamel-2); stroke: var(--on-enamel); stroke-width: 2; }
+.hero__drawing .leaders line { stroke: var(--on-enamel); stroke-width: 1.5; }
+.hero__drawing .pins circle { fill: var(--enamel-2); stroke: var(--on-enamel); stroke-width: 2; }
+.hero__drawing .pins text { fill: var(--on-enamel); font: 700 15px var(--body); text-anchor: middle; }
+
+.content { max-width: 48rem; padding: clamp(2rem, 5vw, 3.5rem) 0 4rem; }
+.content > h1:first-child { display: none; }
+.content h2 { margin: 3rem 0 1rem; padding-top: 1.25rem; border-top: 3px solid var(--ink); font: 700 clamp(1.6rem, 3vw, 2rem)/1.15 var(--heading); scroll-margin-top: 1rem; }
+.content h3 { margin: 2rem 0 0.5rem; font: 600 1.3rem/1.25 var(--heading); }
+.content p, .content ul, .content ol { margin: 0 0 1rem; }
+.content li { margin-bottom: 0.35rem; }
+.content a { color: var(--accent); text-underline-offset: 0.2em; }
+.content strong { font-weight: 600; }
+.content code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace; background: #E6E1D2; padding: 0.1em 0.35em; border-radius: 3px; }
+
+/* Sommaire */
+#markdown-toc { list-style: none; margin: 0 0 2rem; padding: 1.25rem 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: #FBF9F3; columns: 2 16rem; column-gap: 2rem; }
+#markdown-toc::before { content: "Contents"; display: block; margin-bottom: 0.5rem; font: 700 1.1rem var(--heading); column-span: all; }
+#markdown-toc li { break-inside: avoid; margin: 0; }
+#markdown-toc a { display: inline-flex; min-height: 2rem; align-items: center; color: var(--ink); text-decoration: none; }
+#markdown-toc a:hover { text-decoration: underline; }
+
+/* Tableaux : lisibles, et défilants sur téléphone */
+.content table { display: block; overflow-x: auto; width: 100%; border-collapse: collapse; margin: 0 0 1.5rem; font-size: 0.975rem; }
+.content th, .content td { text-align: left; vertical-align: top; padding: 0.65rem 0.9rem; border-bottom: 1px solid var(--line); }
+.content th { background: var(--enamel); color: var(--on-enamel); font-weight: 600; }
+.content td:first-child { font-weight: 600; white-space: nowrap; }
+
+/* FAQ : questions en gras suivies de leur réponse */
+.content p > strong:only-child { display: block; margin-top: 1.25rem; font-family: var(--heading); font-size: 1.15rem; }
+
+.site-footer { background: var(--enamel); color: var(--on-enamel-muted); padding: 2.5rem 0; font-size: 0.95rem; }
+.site-footer p { margin: 0; }

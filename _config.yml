@@ -1,3 +1,6 @@
 title: Cutaway documentation
 description: Merchant guide for the Cutaway Shopify theme.
-theme: jekyll-theme-primer
+markdown: kramdown
+kramdown:
+  toc_levels: "2"
+  auto_ids: true
