@@ -29,7 +29,7 @@ Open **Online Store > Themes > Customize > Theme settings**.
 | **Machines** | **Machine collections**: select the collections that represent a machine. On every product page and product row, Cutaway then shows "Fits:" with links to the machines the product belongs to. |
 | Social media | Links shown in the footer. |
 
-Cutaway ships with three presets: **Cutaway** (green enamel and brass), **Manual** (light gray-green, condensed type) and **Foundry** (kraft paper, cast-iron charcoal and oxide red).
+Cutaway ships with three presets: **Cutaway** (green enamel and brass), **Blueprint** (light gray-green, condensed type) and **Alloy** (kraft paper, cast-iron charcoal and oxide red).
 
 ## 3. A machine page with an exploded view
 
