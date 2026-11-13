@@ -2,6 +2,7 @@
 title: Cutaway support
 layout: default
 hero: false
+permalink: /support/
 eyebrow: Support
 lead: Questions about Cutaway or something not working as expected? Send us your request with this form. You will receive a confirmation by email.
 ---
