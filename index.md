@@ -105,3 +105,7 @@ The part has several variants. Customers pick one on the part's page.
 
 **Does the parts list work without JavaScript?**
 Yes. Each row is a link and a regular add-to-cart form.
+
+## 11. Support
+
+For questions or issues, send a request with the [Cutaway support form]({{ '/support/' | relative_url }}). You will receive a confirmation by email.

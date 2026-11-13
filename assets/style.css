@@ -76,3 +76,7 @@ body { margin: 0; background: var(--cream); color: var(--ink); font: 400 1.0625r
 
 .site-footer { background: var(--enamel); color: var(--on-enamel-muted); padding: 2.5rem 0; font-size: 0.95rem; }
 .site-footer p { margin: 0; }
+
+.hero--small { padding: clamp(2rem, 5vw, 3rem) 0; }
+.hero--small h1 { margin-bottom: 0.75rem; }
+.support-form { width: 100%; min-height: 1250px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
